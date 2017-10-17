@@ -1,0 +1,273 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+
+body {
+  margin: 0;
+  background-color: #DED6C1;
+  font-family: 'Roboto Slab', 'Helvetica', serif;
+  text-align: justify;
+  font-size: 13px;
+}
+
+
+h1 {
+  color: #4F615D;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  color: #4F615D;
+  font-size: 18px;
+}
+
+h3 {
+  color: #F05D59; 
+  text-align: justify;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+h4 { 
+  margin:0;
+  color: red;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+a:link {
+  color: #F05D59;
+  #padding: 1px;
+}
+
+a:hover {
+  color: #4F615D;
+  outline: thin solid #4F615D;
+  #padding: 0px;
+}
+
+nav {
+  background-color: #3A3030;
+  margin: 0 auto;
+  display: block;
+
+}
+
+nav > ul {
+  margin: 0px auto 0px auto;
+  width: 55%;
+  padding-left: 0;
+  padding-right: 0;
+  
+}
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 10px;
+}
+
+nav li:first-child {
+  padding-left: 0;
+}
+
+nav li:last-child {
+  padding-right: 0;
+}
+
+nav a {
+  color: #F05D59;
+  text-decoration: none;
+  font-size: bold;
+  font-size: 13px;
+}
+
+nav > ul > li > a.currentWeb {
+  color: white;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+}
+
+main > footer {
+  color: #7A918C;
+}
+
+main > footer > a {
+  color: #7A918C !important;
+}
+
+main > footer > a:hover {
+  color: white !important;
+  outline: 0px !important;
+}
+
+/* MIRAR ooutline */
+
+/*
+main > footer > a:hover{
+  color: white;
+}*/
+
+body > footer {
+  background-color: #4F615D;
+  color: white;
+  padding-top: 20px;
+}
+
+body > footer > div {
+  width: 55%;
+  margin: auto
+}
+
+body > footer > a {
+  outline: 0px !important;
+}
+
+figure { 
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+header > figure > img {
+  border: white 10px solid;
+  width: 100%;
+  outline: #CCCCCC 1px solid;
+  box-sizing: border-box;
+}
+
+header > figure > figcaption {
+  text-align: right;
+}
+
+blockquote {
+  background-color: white;
+  border-left: #7A918C 2px solid;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 10px 20px;
+}
+
+blockquote > p { 
+  color: #7A918C; 
+  margin: 0px;
+}
+
+blockquote > em {
+  color: #F05D59;
+  font-size: 18px;
+  font-style: normal;
+  text-align: left;
+}
+
+
+.quoteextra {
+  text-transform: uppercase;
+}
+
+#alumnname {
+  float: right;
+}
+
+.red-icon {
+  color: red;
+}
+.blue-icon {
+  color: blue;
+}
+.pink-icon {
+  color: deeppink;
+}
+.black-icon {
+  color: black;
+}
+.violet-icon {
+  color: blueviolet;
+}
+
+/*ordenar*/
+
+
+ul i.fa::before {
+  margin: -1.5em;
+}
+
+.fa-ul {
+  margin : 1.5em !important;
+}
+
+main ul {
+  padding: 0;
+}
+
+main ul > li{
+  margin-top: 10px;
+}
+
+main ol li {
+  margin-top: 5px;
+}
+
+
+
+li[class$="img-icon"] {
+  background: no-repeat left 1px;
+  background-size: 15px auto;
+  list-style-type: none;
+  padding: 0 0 0 20px;
+}
+
+.film-img-icon {
+  background-image: url('../img/camara.png')  !important;
+}
+
+.book-img-icon {
+  background-image: url('../img/libro-abierto.jpg') !important;
+}
+.guide-img-icon {
+  background-image: url('../img/guias.png') !important;
+}
+
+.button-external-web {
+  color: white !important;
+  background: #f08785;
+  border-radius: 7px;
+  padding: 5px 8px; 
+  float: right;
+}
+
+.button-external-web > i {
+  padding: 0px 5px;
+}
+
+dt {
+  margin-top: 15px;
+}
+dt>a:link{
+  outline: 0;
+  text-decoration: none;
+}
+dt>* {
+  padding: 5px 0px;
+  display: inline-block; 
+}
+
+dd {
+  margin-left: 0;
+  margin-top: 5px;
+}
+
+dl > dd:nth-of-type(2n+1) {
+  color:gray;
+}
+
+/*main ul > li::before {
+  content: '\f006';
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -1.5em;
+}*/
+
