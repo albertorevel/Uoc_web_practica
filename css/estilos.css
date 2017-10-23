@@ -7,6 +7,9 @@ body {
   font-family: 'Roboto Slab', 'Helvetica', serif;
   text-align: justify;
   font-size: 13px;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 /* Basic tags elements */
@@ -14,7 +17,6 @@ body {
 h1 {
   color: #4F615D;
   text-align: center;
-  font-weight: bold;
 }
 
 h2 {
@@ -50,7 +52,7 @@ nav {
 
 }
 
-nav > ul {
+nav ul {
   margin: 0px auto 0px auto;
   width: 55%;
   padding-left: 0;
@@ -85,7 +87,7 @@ nav a:not(.currentWeb) {
   color: #F05D59 !important;
 }
 
-nav > ul > li > a.currentWeb {
+nav a.currentWeb {
   color: white;
 }
 
@@ -93,16 +95,24 @@ nav > ul > li > a.currentWeb {
 body > footer {
   background-color: #4F615D;
   color: white;
-  padding-top: 20px;
   margin-top: 30px;
+  padding-top: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
-body > footer > div {
+body > main {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+body > footer div {
   width: 55%;
   margin: auto
 }
 
-body > footer > a {
+body > footer a {
   outline: 0px !important;
 }
 
@@ -114,20 +124,20 @@ body > footer > a {
 
 /* Main header*/
 
-main > header > img { 
+main > header img { 
   width: 100%;
   margin-left: 0px;
   margin-right: 0px;
 }
 
-main > header > img {
+main > header img {
   border: white 10px solid;
   width: 100%;
   outline: #CCCCCC 1px solid;
   box-sizing: border-box;
 }
 
-main > header > div {
+main > header div {
   text-align: right;
 }
 
@@ -143,11 +153,11 @@ main > footer {
   color: #7A918C;
 }
 
-main > footer > a {
+main > footer a {
   color: #7A918C !important;
 }
 
-main > footer > a:hover {
+main > footer a:hover {
   color: white !important;
   outline: 0px !important;
 }
@@ -156,25 +166,26 @@ main > footer > a:hover {
 
 blockquote {
   background-color: white;
-  border-left: #7A918C 2px solid;
+  border-left: #7A918C 3px solid;
   margin: 15px 0px;
-  padding: 10px 30px;
+  padding: 10px 20px;
 }
 
-blockquote > p { 
+blockquote.additionalinfo p { 
   color: #7A918C; 
   margin: 0px 0px 10px 0px;
+  font-size: inherit;
+  text-align: justify;
 }
 
-blockquote > em {
+blockquote p {
   color: #F05D59;
   font-size: 18px;
-  font-style: normal;
   text-align: left;
-  text
+  margin-top: 0px;
 }
 
-blockquote > footer {
+blockquote footer {
   margin-top: 10px;
 }
 
@@ -186,23 +197,30 @@ blockquote > footer {
 
 dt {
   margin-top: 15px;
+  color: red;
+  font-size: 15px;
 }
 
-dt>* {
+dt > * {
   padding: 5px 0px;
   display: inline-block; 
 }
 
-dt > span { 
-  margin:0;
-  color: red;
-  font-weight: normal;
-  font-size: 15px;
+
+dt > a {
+  outline: 0 !important;
+  text-decoration: none;
+  font-size: 13px;
+  color: white !important;
+  background: #f08785;
+  border-radius: 7px;
+  padding: 5px 8px; 
+  float: right;
+
 }
 
-dt>a:link{
-  outline: 0;
-  text-decoration: none;
+dt a:link i {
+  padding: 0px 5px;
 }
 
 dd {
@@ -210,21 +228,10 @@ dd {
   margin-top: 5px;
 }
 
-dl > dd:nth-of-type(2n+1) {
+dl dd:nth-of-type(2n+1) {
   color:gray;
 }
 
-.button-external-web {
-  color: white !important;
-  background: #f08785;
-  border-radius: 7px;
-  padding: 5px 8px; 
-  float: right;
-}
-
-.button-external-web > i {
-  padding: 0px 5px;
-}
 
 
 /* Lists */
